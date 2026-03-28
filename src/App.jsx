@@ -9,25 +9,20 @@ import Project from './component/Project';
 import Skill from './component/Skill';
 
 function App() {
- 
-
   return (
     <BrowserRouter>
-     <Navbar />
-    <Routes>
-      
-          <Route path="/" element={<Navbar />}></Route>
-           <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="hero" element={<Hero />} />
-          <Route path="skills" element={<Skill />} />
-          <Route path="project" element={<Project />} />
-          <Route path="contact" element={<Contact />} />
-    
-   
-    </Routes>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/hero" element={<Hero />} />
+        <Route path="/skills" element={<Skill />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </BrowserRouter>
   );
 }
 
-export default App
+export default App;
