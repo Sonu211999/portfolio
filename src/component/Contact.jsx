@@ -5,7 +5,8 @@ function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   // ✅ Define backend URL outside fetch
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+ /// const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+ const backendUrl = "https://portfolio-tmpb.onrender.com";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
